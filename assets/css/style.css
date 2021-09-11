@@ -1,0 +1,500 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Common */
+.clear::after {
+    clear: both;
+    content: "hello";
+    color: #f1f1f1;
+    display: block;
+    background-color: #f1f1f1;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.colFul {
+    width: 100%;
+}
+
+.colHalf {
+    width: 50%;
+}
+
+.colThird {
+    width: calc(100% /3);
+}
+
+.col-7 {
+    width: calc(100% /3*2) ;
+}
+
+.colorSpecial {
+    background-color: #f1f1f1;
+}
+
+/* Main */
+
+#main {
+    scroll-behavior: smooth;
+}
+
+#header {
+    background-color: #000;
+    height: 38px;
+    top: 0;
+}
+
+#header .iconHeader a:-webkit-any-link {
+    color: #fff;
+    font-size: 13px;
+}
+
+#header .iconHeader {
+    display: inline-block;
+}
+
+#header .iconHeader a {
+    padding: 0 16px;
+    line-height: 38px;
+    display: inline-block;
+}
+
+#header .searchHeader {
+    float: right;
+}
+
+#header .searchHeader i {
+    color: #fff;
+    line-height: 38px;
+    font-size: 13px;
+    padding: 0 16px;
+}
+
+#header .iconHeader a:hover,
+#header .searchHeader:hover i {
+    background-color: #ccc;
+    color: #000;
+    padding: 0 16px;
+    font-size: 13px;
+}
+
+.cover {
+    background-color: #f1f1f1
+}
+
+#sliderContain {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1600px;
+    margin: 0 auto;
+    top: 0;
+}
+
+#slider .introduceSlider {
+    padding: 48px 16px;
+}
+
+#slider .introduceSlider .nameAuthor {
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+#slider .introduceSlider .descriptionAuthor {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#slider .introduceSlider .descriptionJane {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    padding: 3px 8px;
+}
+
+.imageAuthor img {
+    width: 100%;
+    bottom: 0;
+    display: block;
+}
+
+.imageAuthor {
+    position: relative;
+}
+
+.imageAuthor .sliderSlogan,
+.imageAuthor .sliderButton,
+.imageAuthor .sliderName {
+    position: absolute;
+    color: #fff;
+    margin-left: 24px;
+}
+
+.imageAuthor .sliderName  {
+    bottom: 55%;
+    font-size: 36px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.imageAuthor .sliderSlogan {
+    bottom: 45%;
+    font-size: 64px;
+}
+
+.imageAuthor .sliderButton {
+    bottom: 37%;
+    color: #000 !important;
+    background-color: #9f9f9f;
+    border: none;
+    font-size: 18px;
+    padding: 12px ;
+    font-weight: 400;
+}
+
+.imageAuthor .sliderButton:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+
+.sliderHeading {
+    display: flex;  
+}
+
+.coverHeadingcontent {
+    margin: 16px;
+}
+
+.col-7 {
+    background-color: #fff;
+    margin: 16px;
+    position: relative;
+}
+
+.coverCover {
+    padding: 15px;
+}
+
+.titleHeading {
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.des {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 26px;
+    font-weight: 600;
+}
+
+.desDate {
+    opacity: 0.6;
+}
+
+.coverCover img {
+    width: 100%;
+}
+
+.textContain {
+    margin-top: 31px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.textBold {
+    font-weight: 600;
+}
+
+.textContaintwo {
+    margin: 15px 0;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.buttonSlider {
+    margin-top: 15px;
+    font-size: 15px;
+    padding: 8px 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-weight: 600;
+}
+
+.repliesButton {
+    margin-top: 18px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    float: right;
+    font-weight: 600;
+}
+
+.emotionSlider .number {
+    background-color: #fff;
+    color: #000;
+    padding: 2px 8px;
+    margin-left: 8px;
+}
+
+.emotionSlider .buttonSlider:hover,
+.emotionSlider .repliesButton:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.colThird {
+    background-color: #fff;
+    margin: 16px;
+}
+
+.sliderPopular .coverCover {
+    padding: 0;
+}
+
+.sliderPopular .coverCover img {
+    filter: grayscale(75%);
+    display: block;
+}
+
+.coverBlacktext {
+    background-color: #000;
+    padding: 4px 16px;
+}
+
+.coverBlacktext .textCoverblack {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.coverBlacktext .blackCovertext {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.popularPost {
+    font-size: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 18px 16px;
+}
+
+.popularList {
+    list-style-type: none;
+    position: relative;
+}
+
+.popularList .denim,
+.popularList .sed {
+    position: absolute;
+    margin-left: 16px;
+}
+
+.popularList .text1 { 
+    top: 15px;
+    font-size: 18px;
+}
+
+.popularList .text2 {
+    top: 40px;
+    font-size: 15px;
+}
+
+.popularList .text3,
+.popularList .text5,
+.popularList .text7 {
+    font-size: 18px;
+} 
+
+.popularList .text4 {
+    font-size: 15px;
+    top: 112px
+}
+
+.popularList .text6 {
+    font-size: 15px;
+    top: 185px
+}
+
+.popularList .text8 {
+    font-size: 15px;
+    top: 255px
+} 
+
+.popularList li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.popularList li:hover {
+    background-color: #ccc;
+}
+
+.popularList img {
+    width: 50px;
+}
+
+.specialImage {
+    filter: sepia(75%);
+}
+
+.liBorder .borderli{
+    border-bottom: none;
+}
+
+.popularList .imgPopular {
+    border-bottom: none;
+    padding-bottom: 4px;
+}
+
+.advertisePopular {
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 18px 16px;
+}
+
+.myad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    background-color: #f1f1f1;
+    margin: 16px;
+}
+
+.tags {
+    margin: 15px 16px 0;
+}
+
+.detail {
+    padding: 2px 10px;
+    margin-bottom: 16px;
+    background-color: #f1f1f1;
+    color: #000;
+    font-size: 12px;
+    display: inline-block;
+}
+
+
+.specialDetail {
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+}
+
+.imgInspiration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 8px;
+}
+
+.imgInspiration img {
+    width: 50%;
+    padding: 8px;
+}
+
+.popularIcon {
+    font-size: 20px;
+    padding: 18px 16px;
+}
+
+.popularIcon i:hover {
+    opacity: 0.6;
+}
+
+.coverSubscribe {
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.coverSubscribe .textEmail {
+    margin: 15px 0;
+}
+
+.coverSubscribe input {
+    border: 1px solid #ccc;
+    padding: 8px 0;
+    margin-bottom: 15px;
+}
+
+.coverSubscribe button {
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #f44336;
+    color: #fff;
+    display: block;
+    border: none;
+    padding: 12px 16px;
+}
+
+.theTop .toThetop:hover, 
+.coverSubscribe button:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.fix {
+    clear: both;
+    content: "hello";
+    color: #f1f1f1;
+    display: block;
+    background-color: #f1f1f1;
+    height: 915px;
+}
+
+#footer {
+    height: 170px;
+    font-size: 15px;
+    position: relative;
+    background-color: #616161;
+}
+
+.theTop {
+    margin: 0 32px;
+    position: absolute;
+    top: 32px;
+}
+
+.theTop .toThetop {
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 12px 24px;
+    display: inline-block;
+    margin-bottom: 31px;
+}
+
+.theTop .power,
+.theTop .powerLink {
+    color: #fff;
+}
+
+.arrowUp {
+    margin-right: 16px;
+}
